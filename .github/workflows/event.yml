@@ -1,8 +1,6 @@
 
 name: event type
-
-on:
-
+on : 
 push:
 
 jobs:
