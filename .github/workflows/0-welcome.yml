@@ -7,9 +7,15 @@ name: Step 0, Welcome
 # Reference: https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   workflow_dispatch:
+  label:
+    types:
+      - created
   push:
     branches:
       - main
+
+    branches-ignore:
+       -'feature2'
 
 # Reference: https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
