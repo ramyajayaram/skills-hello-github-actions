@@ -2,9 +2,5 @@ name: branch Protection rule
 
 on:
 
-branch-protection-rule:
-types:[created, deleted]
-
-jobs 
-runson:ubuntu-latest
-
+  branch_protection_rule:
+   types: [created, deleted]
